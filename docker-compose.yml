@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  my_frontend:
+    image: vamsi-custom-server
+    container_name: vamsi_compose_web
+    ports:
+      - "8080:80"
+    restart: always
+    volumes:
+      - ./:/usr/share/nginx/html/
