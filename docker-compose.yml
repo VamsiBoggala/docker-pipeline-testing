@@ -2,6 +2,7 @@ version: '3'
 
 services:
   my_frontend:
+    build:
     image: vamsi-custom-server
     container_name: vamsi_compose_web
     ports:
